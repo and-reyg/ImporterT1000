@@ -1,0 +1,11 @@
+org\example\newpoi\VirtAddSheetVirtList.class
+org\example\ui\Controller.class
+org\example\newpoi\PreimportCreator.class
+org\example\GUIStarter.class
+org\example\newpoi\DescriptionAnalysis.class
+org\example\newpoi\PreimportFunc.class
+org\example\newpoi\VirtOptionCreator_Func.class
+org\example\newpoi\VirtFunc.class
+org\example\newpoi\DescrAnalysisFunc.class
+org\example\App.class
+org\example\newpoi\TerminatorSaing.class

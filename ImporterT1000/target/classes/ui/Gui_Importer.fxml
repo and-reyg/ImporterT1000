@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="mainpanel" prefHeight="710.0" prefWidth="670.0" style="-fx-background-color: #0f1215;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ui.Controller">
+    <children>
+        <ImageView blendMode="SCREEN" fitHeight="700.0" fitWidth="680.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@background_T1000.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="329.0" fitWidth="690.0" layoutX="-10.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@moto.png" />
+         </image>
+      </ImageView>
+          <Button fx:id="info" layoutX="561.0" layoutY="76.0" mnemonicParsing="false" opacity="0.0" text="info" />
+          <TextArea id="terminatorSay" fx:id="terminatorSay" layoutX="166.0" layoutY="57.0" prefHeight="72.0" prefWidth="318.0" text="Saludos! I was made by HORTOPAN! " wrapText="true">
+              <font>
+                  <Font name="Verdana" size="12.0" />
+              </font>
+      </TextArea>
+          <AnchorPane layoutX="-1.0" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="680.0" style="-fx-background-color: #0f1215; -fx-border-width: 2; -fx-border-radius: 0; -fx-border-color: Red;">
+              <children>
+                  <TextField id="tField_VirtOpt_PD" fx:id="tField_VirtOpt_PD" editable="false" layoutX="119.0" layoutY="22.0" prefHeight="6.0" prefWidth="403.0" text="I need your PD">
+                      <font>
+                          <Font name="Calibri Italic" size="12.0" />
+                      </font>
+                  </TextField>
+                  <TextField id="tField_VirtOpt_Infoimage" fx:id="tField_VirtOpt_Infoimage" layoutX="119.0" layoutY="56.0" prefHeight="26.0" prefWidth="340.0" text="I need your Infoimage">
+                      <font>
+                          <Font name="Calibri Italic" size="12.0" />
+                      </font>
+                  </TextField>
+                  <TextField id="tField_VirtColmNumber" fx:id="tField_VirtColmNumber" layoutX="482.0" layoutY="54.0" prefHeight="31.0" prefWidth="40.0" text="15" />
+                  <Button id="Add_VirtOpt_PD" fx:id="Add_VirtOpt_PD" layoutX="60.0" layoutY="20.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0" text="Add" textFill="#940d06" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+                  <Button id="Add_VirtOpt_Infoimage" fx:id="Add_VirtOpt_Infoimage" layoutX="60.0" layoutY="56.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0" text="Add" textFill="#940d06" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+                  <Button id="Run_VirtOPt" fx:id="Run_VirtOpt" cancelButton="true" defaultButton="true" layoutX="543.0" layoutY="27.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="78.0" style="-fx-background-color: red;" text="Run" textFill="WHITE" />
+                  <AnchorPane layoutX="206.0" layoutY="-14.0" prefHeight="20.0" prefWidth="242.0" style="-fx-background-color: red;">
+                      <children>
+                          <Text fill="#ffffff" layoutX="16.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Virtual Option Creator" wrappingWidth="209.9229736328125">
+                              <font>
+                                  <Font name="Century Gothic Bold" size="21.0" />
+                              </font>
+                          </Text>
+                      </children>
+                  </AnchorPane>
+              </children>
+      </AnchorPane>
+        <AnchorPane layoutY="280.0" prefHeight="106.0" prefWidth="680.0" style="-fx-background-color: #0f1215; -fx-border-color: Blue; -fx-border-width: 2;">
+            <children>
+                <TextField id="tField_Preimp_Descript" fx:id="tField_Preimp_Descript" editable="false" layoutX="120.0" layoutY="24.0" prefHeight="6.0" prefWidth="403.0" text="I need your Preimport Description">
+                    <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField id="tField_Preimp_DB" fx:id="tField_Preimp_DB" layoutX="120.0" layoutY="58.0" prefHeight="26.0" prefWidth="403.0" text="I need your Preimport DataBase">
+                    <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                    </font>
+                </TextField>
+                <Button id="Add_Preimp_Descr" fx:id="Add_Preimp_Descr" layoutX="61.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0" text="Add" textFill="#0d51cf" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+                <Button id="Add_Preimp_DB" fx:id="Add_Preimp_DB" layoutX="61.0" layoutY="58.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0" text="Add" textFill="#0d51cf" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+                <Button id="Run_Preimport" fx:id="Run_Preimport" layoutX="544.0" layoutY="29.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="78.0" style="-fx-background-color: blue;" text="Run" textFill="WHITE" />
+                <AnchorPane layoutX="206.0" layoutY="-13.0" prefHeight="20.0" prefWidth="242.0" style="-fx-background-color: blue;">
+                    <children>
+                        <Text fill="#ffffff" layoutX="32.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preimport Creator" wrappingWidth="209.9229736328125">
+                            <font>
+                                <Font name="Century Gothic Bold" size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <AnchorPane layoutY="386.0" prefHeight="106.0" prefWidth="680.0" style="-fx-background-color: #0f1215; -fx-border-color: Green; -fx-border-width: 3; -fx-border-insets: 1;">
+            <children>
+                <TextField id="tField_DescAnals_Descr" fx:id="tField_DescAnals_Descr" editable="false" layoutX="122.0" layoutY="24.0" prefHeight="6.0" prefWidth="403.0" text="I need your Product Description">
+                    <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField id="tField_DescAnals_Descr" fx:id="tField_DescAnals_DB" layoutX="122.0" layoutY="58.0" prefHeight="26.0" prefWidth="403.0" text="I need your DescrAnalysis_DB">
+                    <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                    </font>
+                </TextField>
+                <Button id="Add_DescAnals_Descr" fx:id="Add_DescAnals_Descr" layoutX="63.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0" text="Add" textFill="#0b9410" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+                <Button id="Add_DescAnals_DB" fx:id="Add_DescAnals_DB" layoutX="63.0" layoutY="58.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0" text="Add" textFill="#0b9410" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+                <Button id="Run_DescriptAnalis" fx:id="Run_DescriptionAnalis" layoutX="546.0" layoutY="29.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="78.0" style="-fx-background-color: green;" text="Run" textFill="WHITE" />
+                <AnchorPane layoutX="201.0" layoutY="-15.0" prefHeight="20.0" prefWidth="242.0" style="-fx-background-color: green;">
+                    <children>
+                        <Text fill="#ffffff" layoutX="38.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description Analysis" wrappingWidth="209.9229736328125">
+                            <font>
+                                <Font name="Century Gothic Bold" size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <Label layoutX="229.0" layoutY="13.0" opacity="0.0" text="IMPORTER T1000" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="23.0" />
+            </font>
+        </Label>
+        <TextArea id="logMassege" fx:id="logMassege" editable="false" layoutY="492.0" opacity="0.78" prefHeight="224.0" prefWidth="680.0" style="-fx-highlight-fill: white; -fx-text-fill: white; -fx-control-inner-background: black; -fx-highlight-text-fill: #000000;" text="/All systems are ready...  ">
+            <font>
+                <Font name="SansSerif Regular" size="15.0" />
+            </font>
+      </TextArea>
+    </children>
+</AnchorPane>
